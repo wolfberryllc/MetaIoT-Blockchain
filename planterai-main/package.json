@@ -1,0 +1,33 @@
+{
+  "name": "planterai",
+  "version": "1.0.1",
+  "author": "WolfberryLLC",
+  "description": "PlanterAI is making life smart and providing users the ability to Monitor plant sensors reading in the form of NFT's along with maximum security with QR Scanning",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux AppImage --armv7l"
+  },
+  "dependencies": {
+    "electron-prompt": "^1.7.0",
+    "mqtt": "^4.3.7",
+    "node-schedule": "^2.0.0",
+    "request": "^2.88.2",
+    "serialport": "^10.5.0"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "^24.0.0-alpha.12",
+    "electron-installer-snap": "^5.2.0",
+    "electron-packager": "^17.1.1"
+  },
+  "build": {
+    "appId": "com.planter.ai",
+    "productName": "PlanterAI",
+    "linux": {
+      "category": "Utility",
+      "icon": "icons/"
+    }
+  }
+}
